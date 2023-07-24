@@ -11,13 +11,13 @@ function SelectLogin() {
           to={`/owner/login`}
           className="component-inner-box Make-component-box"
         >
-          <div className="inner-text">사업자 회원 가입하기</div>
+          <div className="inner-text">사업자로 시작하기</div>
         </Link>
         <Link
           to={`/user/login`}
           className="component-inner-box Make-component-box"
         >
-          <div className="inner-text">사용자 회원 가입하기</div>
+          <div className="inner-text">사용자로 시작하기</div>
         </Link>
       </div>
     </>

@@ -39,6 +39,7 @@ public class ReservationService {
         Customer customer =  customerRepository.findByEmail(email)
                 .orElseThrow(() -> new CustomerException(CustomValidationStatus.NO_USER));
 
+
         boolean alreadyReservation = reservationRepository.existsByCustomerIdAndSpaceId(customer.getCustomerId(), sharedSpace.getSpaceId());
 
         if (alreadyReservation) {
